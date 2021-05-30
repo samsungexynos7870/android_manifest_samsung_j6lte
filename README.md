@@ -1,27 +1,26 @@
-# OrangeFox Recovery Project
+# LineageOS 18.1
 
 ### How to build ###
 
 ```bash
 # Create dirs
-$ mkdir ofox ; cd ofox
+$ mkdir lineage ; cd lineage
 
 # Init repo
-$ repo init --depth=1 -u https://gitlab.com/OrangeFox/Manifest.git -b fox_9.0
+$ repo init --depth=1 -u https://github.com/LineageOS/android.git -b lineage-18.1
 
-# Clone j6lte repo
-$ git clone https://gitlab.com/OrangeFox/device/j6lte.git -b fox_9.0 device/samsung/j6lte
+# Clone my local repo
+$ git clone https://github.com/samsungexynos7870/android_manifest_samsung_j6lte.git -b lineage-18.1 .repo/local_manifests
 
 # Sync
 $ repo sync --no-repo-verify -c --force-sync --no-clone-bundle --no-tags --optimized-fetch --prune -j`nproc`
 
 # Build
-$ mv device/samsung/j6lte/build_ofox.sh .
-$ . build_ofox.sh j6lte
+$ . build/envsetup.sh && lunch lineage_j6lte-userdebug && mka clean && mka api-stubs-docs && mka hiddenapi-lists-docs && mka system-api-stubs-docs && mka test-api-stubs-docs && mka bacon -j`nproc`
 ```
 
 ## Credits
-2019 @Astrako
+2021 @Astrako
 
 ## Contact
-Telegram support group: https://t.me/joinchat/D1Jk_VbieGBXOWZt2y8O7A
+Telegram support group: <s>https://t.me/joinchat/D1Jk_VbieGBXOWZt2y8O7A</s> DEPRECATED

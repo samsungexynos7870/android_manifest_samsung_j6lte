@@ -7,7 +7,6 @@
 
     <!-- Remote -->
     <remote fetch="https://github.com/samsungexynos7870" name="j6lte" />
-    <remote fetch="https://github.com/" name="github" />
 
     <!-- Device -->
     <project name="android_device_samsung_j6lte" path="device/samsung/j6lte" remote="j6lte" revision="lineage-18.1" />

@@ -10,7 +10,7 @@
 
     <!-- Device -->
     <project name="android_device_samsung_j6lte" path="device/samsung/j6lte" remote="j6lte" revision="lineage-18.1" />
-    <project name="android_device_samsung_universal7870-common" path="device/samsung/universal7870-common" remote="j6lte" revision="lineage-18.1" />
+    <project name="android_device_samsung_universal7870-common" path="device/samsung/universal7870-common" remote="j6lte" revision="lineage-19.0" />
 
     <!-- Kernel -->
     <project name="android_kernel_samsung_exynos7870" path="kernel/samsung/exynos7870" remote="j6lte" revision="aosp-11" />

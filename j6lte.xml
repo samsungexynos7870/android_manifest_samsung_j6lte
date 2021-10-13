@@ -9,7 +9,7 @@
     <remote fetch="https://github.com/samsungexynos7870" name="j6lte" />
 
     <!-- Device -->
-    <project name="android_device_samsung_j6lte" path="device/samsung/j6lte" remote="j6lte" revision="lineage-18.1" />
+    <project name="android_device_samsung_j6lte" path="device/samsung/j6lte" remote="j6lte" revision="lineage-19.0" />
     <project name="android_device_samsung_universal7870-common" path="device/samsung/universal7870-common" remote="j6lte" revision="lineage-19.0" />
 
     <!-- Kernel -->
